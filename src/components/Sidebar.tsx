@@ -17,6 +17,7 @@ const Sidebar = ({ refs }: ISidebarProps): JSX.Element => {
 								block: 'start',
 							})
 						}
+						className="hover:text-green-500 transition"
 					>
 						{t('Նախաբան')}
 					</button>

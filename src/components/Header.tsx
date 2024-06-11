@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import icon from '../assets/favicon.ico';
+import logo from '../assets/logo.png';
 import eng from '../assets/eng.png';
 import arm from '../assets/arm.png';
 
@@ -16,8 +16,7 @@ const Header = (): JSX.Element => {
 				<div>
 					<h1>
 						<Link to="/" className="flex items-center gap-1">
-							<img src={icon} alt="icon" />
-							<span className="font-extrabold text-white uppercase text-3xl">tumo</span>
+							<img src={logo} alt="icon" className="w-24" />
 							<span className="font-medium text-green-500 uppercase text-3xl">.js</span>
 						</Link>
 					</h1>

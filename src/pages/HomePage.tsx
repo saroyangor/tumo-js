@@ -10,7 +10,7 @@ const HomePage = (): JSX.Element => {
 
 	return (
 		<article className="py-10">
-			<h1 className="text-4xl text-green-500 text-center">{t('tumo.js Ուղեցույց')}</h1>
+			<h1 className="text-4xl text-green-500 text-center mb-8">{t('tumo.js Ուղեցույց')}</h1>
 
 			<div className="flex gap-8">
 				<Sidebar refs={{ naxabanRef: naxabanRef }} />
