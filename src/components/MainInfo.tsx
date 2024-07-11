@@ -49,7 +49,7 @@ const MainInfo = ({ refs }: IMainInfoProps): JSX.Element => {
 					<div>
 						<p className="pt-3.5 font-bold">{t('վրձին')}</p>
 						<p>{t('- դեղին եռանկյունը')}</p>
-						<p className="font-bold">{t('canvas (կտավ)')}</p>
+						<p className="font-bold">{t('կտավ')}</p>
 						<p>{t('- տարածքը, որտեղ շարժվում է վրձինը')}</p>
 						<p className="font-bold">{t('կոորդինատներ')}</p>
 						<p>{t('- կետի կոորդինատները կտավի վրա արտահայտված են x-ով և y-ով')}</p>
@@ -142,7 +142,7 @@ const MainInfo = ({ refs }: IMainInfoProps): JSX.Element => {
 
 					<article className="flex mt-3">
 						<div className="w-1/2">
-							<p className="font-bold mb-2.5">{t('Օրինակ 1՝')}</p>
+							<p className="font-bold mb-2.5">{t('Օրինակ 2՝')}</p>
 
 							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
 								<p>
@@ -245,7 +245,7 @@ const MainInfo = ({ refs }: IMainInfoProps): JSX.Element => {
 				<div ref={refs.colorRef} className="pt-8">
 					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('color()')}</h3>
 
-					<p className="py-3.5">{t('Color() ֆունկցիան որոշում է հաջորդող գծերի գույնը:')}</p>
+					<p className="py-3.5">{t('color() ֆունկցիան որոշում է հաջորդող գծերի գույնը:')}</p>
 
 					<p className="p-2 bg-zinc-500 text-white">{t('color(r [, g [, b ]]])')}</p>
 
