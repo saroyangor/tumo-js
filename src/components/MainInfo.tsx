@@ -11,6 +11,13 @@ import colorRGBGif from '../assets/color_rgb.gif';
 import colorHexGif from '../assets/color_hex.gif';
 import colorArrayGif from '../assets/color_rgb_array.gif';
 import gotoGif from '../assets/goto.gif';
+import moveGif from '../assets/move.gif';
+import showGridPng from '../assets/grid1.png';
+import showGrid2Png from '../assets/grid2.png';
+import drawTrianglePng from '../assets/drawTriangle.png';
+import drawRectanglePng from '../assets/drawRectangle.png';
+import drawPolygon1Png from '../assets/drawPolygon.png';
+import drawPolygon2Png from '../assets/drawPolygon6.png';
 
 interface IMainInfoProps {
 	refs: any;
@@ -541,6 +548,264 @@ const MainInfo = ({ refs }: IMainInfoProps): JSX.Element => {
 						<div className="w-1/2">
 							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
 							<img src={gotoGif} alt="goto" />
+						</div>
+					</article>
+				</div>
+
+				<div ref={refs.moveRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('move()')}</h3>
+
+					<p className="py-3.5">
+						{t('Տեղաշարժում է վրձինը նշված հեռավորության վրա, առանց գիծ գծելու։')}
+					</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('move(length)')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('number: length')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ՝')}</p>
+
+							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									color<span className="text-white">(</span>
+									<span className="text-lime-400">"red"</span>
+									<span className="text-white">)</span>
+								</p>
+								<p>
+									drawLine<span className="text-white">(</span>
+									<span className="text-purple-400">100</span>
+									<span className="text-white">)</span>
+								</p>
+								<br />
+								<p>
+									move<span className="text-white">(</span>
+									<span className="text-purple-400">60</span>
+									<span className="text-white">)</span>
+								</p>
+								<br />
+								<p>
+									color<span className="text-white">(</span>
+									<span className="text-lime-400">"blue"</span>
+									<span className="text-white">)</span>
+								</p>
+								<p>
+									drawLine<span className="text-white">(</span>
+									<span className="text-purple-400">100</span>
+									<span className="text-white">)</span>
+								</p>
+							</div>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={moveGif} alt="move" />
+						</div>
+					</article>
+				</div>
+
+				<div ref={refs.eraseRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('erase()')}</h3>
+
+					<p className="py-3.5">{t('Մաքրում է կտավը')}</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('erase()')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('չունի')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ՝')}</p>
+
+							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									erase<span className="text-white">()</span>
+								</p>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div ref={refs.showGridRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('showGrid()')}</h3>
+
+					<p className="py-3.5">
+						{t('Ցուցադրում է կոորդինատական առանցքները։ Արգումենտը կարգավորում է ցանցի խտությունը։')}
+					</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('showGrid(scale)')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('number: scale')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ 1՝')}</p>
+
+							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									showGrid<span className="text-white">(</span>
+									<span className="text-purple-400">50</span>
+									<span className="text-white">)</span>
+								</p>
+							</div>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={showGridPng} alt="showGrid" />
+						</div>
+					</article>
+
+					<article className="flex mt-3">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ 2՝')}</p>
+
+							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									showGrid<span className="text-white">(</span>
+									<span className="text-purple-400">20</span>
+									<span className="text-white">)</span>
+								</p>
+							</div>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={showGrid2Png} alt="showGrid" />
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<div ref={refs.shapesRef}>
+				<h3 className="text-2xl font-bold pb-2.5 border-b border-gray-300">{t('Պատկերներ')}</h3>
+
+				<div ref={refs.triangleRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('drawTriangle()')}</h3>
+
+					<p className="py-3.5">
+						{t('Գծում է եռանկյուն։ Արգումենտը որոշում է եռանկյան կողմի երկարությունը։')}
+					</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('drawTriangle(length)')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('number: length')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ՝')}</p>
+
+							<p className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								drawTriangle<span className="text-white">(</span>
+								<span className="text-purple-400">100</span>
+								<span className="text-white">)</span>
+							</p>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={drawTrianglePng} alt="drawTriangle" />
+						</div>
+					</article>
+				</div>
+
+				<div ref={refs.rectangleRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('drawRectangle()')}</h3>
+
+					<p className="py-3.5">
+						{t('Գծում է ուղղանկյուն Արգումենտները որոշում են ուղղանկյան կողմերի երկարությունները։')}
+					</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('drawRectangle(width, height)')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('number: width')}</p>
+						<p className="">{t('number: height')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ՝')}</p>
+
+							<p className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								drawRectangle<span className="text-white">(</span>
+								<span className="text-purple-400">100</span>
+								<span className="text-white">,</span>
+								<span className="text-purple-400">60</span>
+								<span className="text-white">)</span>
+							</p>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={drawRectanglePng} alt="drawRectangle" />
+						</div>
+					</article>
+				</div>
+
+				<div ref={refs.polygonRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('drawPolygon()')}</h3>
+
+					<p className="py-3.5">
+						{t(
+							'Գծում է բազմանկյուն: Արգումենտները որոշում են բազմանկյան կողմերի քանակը և երկարությունը։',
+						)}
+					</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('drawPolygon(sideCount, length)')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('number: sideCount')}</p>
+						<p className="">{t('number: length')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ 1՝')}</p>
+
+							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									drawPolygon<span className="text-white">(</span>
+									<span className="text-purple-400">5</span>
+									<span className="text-white">,</span>
+									<span className="text-purple-400">100</span>
+									<span className="text-white">)</span>
+								</p>
+							</div>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={drawPolygon1Png} alt="drawPolygon" />
+						</div>
+					</article>
+
+					<article className="flex mt-3">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ 2՝')}</p>
+
+							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									drawPolygon<span className="text-white">(</span>
+									<span className="text-purple-400">6</span>
+									<span className="text-white">,</span>
+									<span className="text-purple-400">100</span>
+									<span className="text-white">)</span>
+								</p>
+							</div>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={drawPolygon2Png} alt="drawPolygon" />
 						</div>
 					</article>
 				</div>

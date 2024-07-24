@@ -16,6 +16,13 @@ const HomePage = (): JSX.Element => {
 	const widthRef = useRef();
 	const colorRef = useRef();
 	const goToRef = useRef();
+	const moveRef = useRef();
+	const eraseRef = useRef();
+	const showGridRef = useRef();
+	const shapesRef = useRef();
+	const triangleRef = useRef();
+	const rectangleRef = useRef();
+	const polygonRef = useRef();
 
 	const refs = {
 		naxabanRef,
@@ -28,6 +35,13 @@ const HomePage = (): JSX.Element => {
 		widthRef,
 		colorRef,
 		goToRef,
+		moveRef,
+		eraseRef,
+		showGridRef,
+		shapesRef,
+		triangleRef,
+		rectangleRef,
+		polygonRef,
 	};
 
 	return (

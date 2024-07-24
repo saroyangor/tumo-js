@@ -140,6 +140,101 @@ const Sidebar = ({ refs }: ISidebarProps): JSX.Element => {
 								{t('goTo()')}
 							</button>
 						</li>
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.moveRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('move()')}
+							</button>
+						</li>
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.eraseRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('erase()')}
+							</button>
+						</li>
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.showGridRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('showGrid()')}
+							</button>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<button
+						onClick={() =>
+							refs.shapesRef.current.scrollIntoView({
+								behavior: 'smooth',
+								block: 'start',
+							})
+						}
+						className="hover:text-green-500 transition"
+					>
+						{t('Պատկերներ')}
+					</button>
+
+					<ul className="flex flex-col">
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.triangleRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('drawTriangle()')}
+							</button>
+						</li>
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.rectangleRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('drawRectangle()')}
+							</button>
+						</li>
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.polygonRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('drawPolygon()')}
+							</button>
+						</li>
 					</ul>
 				</li>
 			</ul>
