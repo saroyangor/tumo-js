@@ -18,6 +18,12 @@ import drawTrianglePng from '../assets/drawTriangle.png';
 import drawRectanglePng from '../assets/drawRectangle.png';
 import drawPolygon1Png from '../assets/drawPolygon.png';
 import drawPolygon2Png from '../assets/drawPolygon6.png';
+import drawEllipsePng from '../assets/drawEllipse.png';
+import drawStarPng from '../assets/drawStar.png';
+import fillColor1Png from '../assets/fill1.png';
+import fillColor2Png from '../assets/fill2.png';
+import fillColor3Png from '../assets/fill3.png';
+import textPng from '../assets/text.png';
 
 interface IMainInfoProps {
 	refs: any;
@@ -806,6 +812,212 @@ const MainInfo = ({ refs }: IMainInfoProps): JSX.Element => {
 						<div className="w-1/2">
 							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
 							<img src={drawPolygon2Png} alt="drawPolygon" />
+						</div>
+					</article>
+				</div>
+
+				<div ref={refs.ellipseRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('drawEllipse()')}</h3>
+
+					<p className="py-3.5">
+						{t('Գծում է էլիպս։ Արգումենտները որոշում են էլիպսի երկարությունը և բարձրությունը։')}
+					</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('drawEllipse(width, height)')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('number: width')}</p>
+						<p className="">{t('number: height')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ՝')}</p>
+
+							<p className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								drawEllipse<span className="text-white">(</span>
+								<span className="text-purple-400">100</span>
+								<span className="text-white">,</span>
+								<span className="text-purple-400">60</span>
+								<span className="text-white">)</span>
+							</p>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={drawEllipsePng} alt="drawEllipse" />
+						</div>
+					</article>
+				</div>
+
+				<div ref={refs.starRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('drawStar()')}</h3>
+
+					<p className="py-3.5">
+						{t('Գծում է աստղ։ Արգումենտները որոշում են աստղի կողմերի քանակը և երկարությունը։')}
+					</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('drawStar(points, size)')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('number: points')}</p>
+						<p className="">{t('number: size')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ՝')}</p>
+
+							<p className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								drawStar<span className="text-white">(</span>
+								<span className="text-purple-400">5</span>
+								<span className="text-white">,</span>
+								<span className="text-purple-400">100</span>
+								<span className="text-white">)</span>
+							</p>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={drawStarPng} alt="drawStar" />
+						</div>
+					</article>
+				</div>
+
+				<div ref={refs.fillColorRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('fillColor()')}</h3>
+
+					<p className="py-3.5">
+						{t(
+							'Որոշում է պատկերի ներկման գույնը: Արգումենտները որոշում են, թե որ գույնով պետք է ներկվի պատկերը։',
+						)}
+					</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('fillColor(...color)')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('string | Array<number> | number, number, number: color')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ 1՝')}</p>
+
+							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									fillColor<span className="text-white">(</span>
+									<span className="text-lime-400">"red"</span>
+									<span className="text-white">)</span>
+								</p>
+								<p>
+									drawTriangle<span className="text-white">(</span>
+									<span className="text-purple-400">100</span>
+									<span className="text-white">)</span>
+								</p>
+							</div>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={fillColor1Png} alt="fillColor1" />
+						</div>
+					</article>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ 1՝')}</p>
+
+							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									fillColor<span className="text-white">(</span>
+									<span className="text-lime-400">"red"</span>
+									<span className="text-white">)</span>
+								</p>
+								<p>
+									drawRectangle<span className="text-white">(</span>
+									<span className="text-purple-400">100</span>
+									<span className="text-white">,</span>
+									<span className="text-purple-400">60</span>
+									<span className="text-white">)</span>
+								</p>
+							</div>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={fillColor2Png} alt="fillColor2" />
+						</div>
+					</article>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ 1՝')}</p>
+
+							<div className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									fillColor<span className="text-white">(</span>
+									<span className="text-lime-400">"red"</span>
+									<span className="text-white">)</span>
+								</p>
+								<p>
+									drawStar<span className="text-white">(</span>
+									<span className="text-purple-400">6</span>
+									<span className="text-white">,</span>
+									<span className="text-purple-400">100</span>
+									<span className="text-white">)</span>
+								</p>
+							</div>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={fillColor3Png} alt="fillColor3" />
+						</div>
+					</article>
+				</div>
+
+				<div ref={refs.textRef} className="pt-8">
+					<h3 className="text-xl font-bold pb-2.5 border-b border-black">{t('text()')}</h3>
+
+					<p className="py-3.5">
+						{t(
+							'Գրում է տեքստ։ Արգումենտները որոշում են տեքստի պարունակությունը, տառաչափը և տառատեսակը։',
+						)}
+					</p>
+
+					<p className="p-2 bg-zinc-500 text-white">{t('text(str, fontSize, fontFamily)')}</p>
+
+					<div className="py-3.5">
+						<p className="font-bold">{t('Արգումենտներ')}</p>
+						<p className="">{t('string: str')}</p>
+						<p className="">{t('number: fontSize')}</p>
+						<p className="">{t('string: fontFamily')}</p>
+					</div>
+
+					<article className="flex">
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Օրինակ՝')}</p>
+
+							<p className="p-3.5 bg-black text-yellow-300 font-mono rounded-md mr-8 font-bold text-lg">
+								<p>
+									goTo<span className="text-white">(</span>
+									<span className="text-purple-400">200</span>
+									<span className="text-white">,</span>
+									<span className="text-purple-400">200</span>
+									<span className="text-white">)</span>
+								</p>
+								<p>
+									text<span className="text-white">(</span>
+									<span className="text-lime-400">"Welcome to Tumo!"</span>
+									<span className="text-white">,</span>
+									<span className="text-purple-400">24</span>
+									<span className="text-white">,</span>
+									<span className="text-lime-400">"Arial"</span>
+									<span className="text-white">)</span>
+								</p>
+							</p>
+						</div>
+						<div className="w-1/2">
+							<p className="font-bold mb-2.5">{t('Արդյունք՝')}</p>
+							<img src={textPng} alt="text" />
 						</div>
 					</article>
 				</div>

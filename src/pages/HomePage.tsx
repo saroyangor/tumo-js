@@ -23,6 +23,10 @@ const HomePage = (): JSX.Element => {
 	const triangleRef = useRef();
 	const rectangleRef = useRef();
 	const polygonRef = useRef();
+	const ellipseRef = useRef();
+	const starRef = useRef();
+	const fillColorRef = useRef();
+	const textRef = useRef();
 
 	const refs = {
 		naxabanRef,
@@ -42,6 +46,10 @@ const HomePage = (): JSX.Element => {
 		triangleRef,
 		rectangleRef,
 		polygonRef,
+		ellipseRef,
+		starRef,
+		fillColorRef,
+		textRef,
 	};
 
 	return (

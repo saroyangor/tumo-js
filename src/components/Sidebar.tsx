@@ -235,6 +235,58 @@ const Sidebar = ({ refs }: ISidebarProps): JSX.Element => {
 								{t('drawPolygon()')}
 							</button>
 						</li>
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.ellipseRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('drawEllipse()')}
+							</button>
+						</li>
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.starRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('drawStar()')}
+							</button>
+						</li>
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.fillColorRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('fillColor()')}
+							</button>
+						</li>
+						<li className="pl-8">
+							<button
+								onClick={() =>
+									refs.textRef.current.scrollIntoView({
+										behavior: 'smooth',
+										block: 'start',
+									})
+								}
+								className="hover:text-green-500 transition"
+							>
+								{t('text()')}
+							</button>
+						</li>
 					</ul>
 				</li>
 			</ul>
