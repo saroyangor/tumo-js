@@ -34,9 +34,13 @@
   "Տեղաշարժում է վրձինը նշված հեռավորության վրա, առանց գիծ գծելու։": "Moves the brush the specified distance without drawing a line.",
   "Մաքրում է կտավը": "Clear all canvas.",
   "չունի": "none",
-  "Ցուցադրում է կոորդինատական առանցքները։ Արգումենտը կարգավորում է ցանցի խտությունը։": "Shows Euclidean grid on canvas. We recomend call this function before all others. Argument sets grid scale.",
+  "Ցուցադրում է կոորդինատական առանցքները։ Արգումենտը կարգավորում է ցանցի խտությունը։": "Shows Euclidean grid on canvas. We recommend call this function before all others. Argument sets grid scale.",
   "Պատկերներ": "Shapes",
   "Գծում է եռանկյուն։ Արգումենտը որոշում է եռանկյան կողմի երկարությունը։": "Draws a triangle. The argument determines the length of the side of the triangle.",
   "Գծում է ուղղանկյուն Արգումենտները որոշում են ուղղանկյան կողմերի երկարությունները։": "Draws a rectangle. The arguments determine the lengths of the sides of the rectangle.",
-  "Գծում է բազմանկյուն: Արգումենտները որոշում են բազմանկյան կողմերի քանակը և երկարությունը։": "Draws a polygon. The arguments determine the number and length of the sides of the polygon."
+  "Գծում է բազմանկյուն: Արգումենտները որոշում են բազմանկյան կողմերի քանակը և երկարությունը։": "Draws a polygon. The arguments determine the number and length of the sides of the polygon.",
+  "Գծում է էլիպս։ Արգումենտները որոշում են էլիպսի երկարությունը և բարձրությունը։": "Draws an ellipse. The arguments determine the length and height of the ellipse.",
+  "Գրում է տեքստ։ Արգումենտները որոշում են տեքստի պարունակությունը, տառաչափը և տառատեսակը։": "Writes a text. The arguments determine the text content, font size, and font family.",
+  "Գծում է աստղ։ Արգումենտները որոշում են աստղի կողմերի քանակը և երկարությունը։": "Draws a star. The arguments determine the number and the length of sides",
+  "Որոշում է պատկերի ներկման գույնը: Արգումենտները որոշում են, թե որ գույնով պետք է ներկվի պատկերը։": "Determines the color of the image. The arguments determine which color the image should be painted with."
 }
